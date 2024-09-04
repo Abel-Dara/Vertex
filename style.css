@@ -1,0 +1,76 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(2, 11, 58);
+    font-size: 10cq;
+    color:bisque;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 20px;
+    float: inline-start;
+    font-style: italic;
+}
+.wasted{
+    text-align: left;
+    font-size: 96px;
+}
+.don{
+    font-size: 25px;
+}
+button{
+    border: none;
+    padding: 1rem 2rem;
+    background-color: aqua;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+
+text{
+    width: 200px;
+    height: 250px;
+}
+fieldset{
+    width: 700px;
+    min-height: max-content;
+}
+main{
+    margin-left: 20PX;
+    margin-right: 20PX;
+}
+h1{
+    text-align: center;
+}
+h2, h3, h4{
+text-align: center;
+}
+P{
+    font-weight: 1000;;
+}
+.p1{
+    text-align: center;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(197, 96%, 48%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 29px;
+    text-decoration: none;
+
+}
+.navbar a:hover{
+    background-color: hsl(219, 86%, 48%);
+    color: black;
+}
+.navbar li{
+    float: right;
+}
