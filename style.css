@@ -74,3 +74,69 @@ P{
 .navbar li{
     float: right;
 }
+
+@media (max-width: 1200px) {
+    .wasted {
+        font-size: 2.5rem;
+    }
+
+    table {
+        font-size: 3rem;
+    }
+
+    .don {
+        font-size: 1.1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .wasted {
+        font-size: 2rem;
+    }
+
+     table {
+        font-size: 2rem;
+    }
+
+    .don {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.2rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar li {
+        float: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .wasted {
+        font-size: 1.5rem;
+    }
+
+     table {
+        font-size: 1.5rem;
+    }
+
+    .don {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+}
