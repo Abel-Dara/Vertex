@@ -94,6 +94,9 @@ P{
         font-size: 1rem;
         padding: 0.8rem 1.5rem;
     }
+button:hover {
+    border-radius: 30px
+   }
 }
 
 @media (max-width: 768px) {
