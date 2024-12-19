@@ -1,54 +1,107 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Summer code</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
- 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertex Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/JAVASCRIPT/script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        
+        <ul>
+            <div class="logo">VERTEX TECH</div>
+            <div class="PC"> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Product.html">Product</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Contact.html" class="active">Contact</a></li>
+            </div>
+            <nav class="content">
+                <button id="toggleBtn" onclick="toggleSidebar()">☰</button>
+            </nav>
+            
+            <div id="sidebar" class="sidebar">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Product.html">Product</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+              </div>
 
-        <nav class="navbar">
+        </ul>
+    </nav>
+
+    <main class="contact-container">
+        <h2>Contact Us</h2>
+        <p>Please fill out the form below, and we’ll get in touch with you.</p>
+        <form action="https://formsubmit.co/your-email@abelojeyinka3@gmail.com" method="POST">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name" required><br>
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name" required><br>
+
+                <label for="tel">Telephone</label>
+                <input type="tel" id="tel" name="tel" placeholder="Enter your phone number"><br>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+                <label for="Country">Country</label>
+                <select name="Country" id="Country" required>
+                    <option value="America"  placeholder="Select country">America</option>
+                    <option value="England">England</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Phillipine">Phillipine</option>
+                    <option value="USA">USA</option>
+                </select><br>
+
+
+                <label>Gender</label>
+                <div class="gender-options">
+                    <input type="radio" id="Male" name="gender" value="Male" required>
+                    <label for="Male">Male</label>
+                    <input type="radio" id="Female" name="gender" value="Female">
+                    <label for="Female">Female</label>
+                    <input type="radio" id="Other" name="gender" value="Other">
+                    <label for="Other">Other</label>
+                </div><br>
+
+                <label for="textarea">Comments</label>
+                <textarea id="textarea" name="textarea" rows="4" placeholder="Your message here..."></textarea><br>
+
+                <button class="Frmbtn" type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <div class="footer">
+        <nav class="footer">
+
+
             <ul>
-                 
-                <nav class="logo">
-                    VERTEX
-                    </nav>
+                <nav class="footer-logo">VERTEX TECH</nav>
+            <li><a href="index.html">Home</a></li>
 
-                <li> <a href="Attendance.html">Attendance</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
                 <li><a href="Blog.html">Blog</a></li>
                 <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="Product.html">Product</a></li>
             </ul>
+            <p id="countdown"></p>
+            <p>&#169; 2024 Vertex Tech. All rights reserved.</p>
         </nav>
-        <main>
-            <h2>Contact page</h2>
-            <p>Fill the form below so i can get intouch with you</p>
-            <form action="About.html" method="post" href="About.html">
-                <fieldset>
-                    <legend>Fill the form below</legend>
-                        <label for="fname">First Name</label><br> 
-                        <input type="text" id="fname" name="fname"><br>
-                        <label for="lname">Last Name</label><br>
-                        <input type="text" id="lname" name="lname"><br>
-                        <label for="tel">Telephone</label><br>
-                        <input type="tel" id="tel" name="tel"><br>
-                        <label for="email">Email</label><br>
-                        <input type="email" id="email" name="email"><br>
-                        <p class="11">Gender</p>
-                        <input type="radio" id="Male" name="Male" value="Male">
-                        <label for="Male">Male</label><br>
-                        <input type="radio" id="Female" name="Female" value="Female">
-                        <label for="Female">Female</label><br>
-                        <input type="radio" id="Other" name="Other" value="Other">
-                        <label for="Other">Other</label><br>
-                        <label for="textarea">Comment here</label><br>
-                        <input type="text" id="textarea" name="textarea"><br>
-                        <input type="submit" id="submit" name="submit">
-                </fieldset>
-                </form>
-        </main>
-    </body>
+    </div>
+</body>
 </html>
