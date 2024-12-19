@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-U-Compatible"content="IE=chrome">
-        <meta name="viewport" content="width=device-width, initial-scale: 1.0">
-
+        <meta name="viewport" content="width=device-width">
+            <title>Vertex Tech</title>
+        <script src="/JAVASCRIPT/script.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -15,38 +16,128 @@
                 <nav class="logo">
                     VERTEX TECH
                     </nav>
+                <div class="PC"> 
                 <li><a href="index.html">Home</a></li>
-                <li><a href="Product.html">Product</a></li>
+                <li><a href="Product.html"  class="active">Product</a></li>
                 <li><a href="Portfolio.html">Portfolio</a></li>
                 <li><a href="Blog.html">Blog</a></li>
                 <li><a href="Contact.html">Contact</a></li>
+                </div>
+                <nav class="content">
+                    <button id="toggleBtn" onclick="toggleSidebar()">☰</button>
+                </nav>
+                
+                <div id="sidebar" class="sidebar">
+                    <h2>Menu</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Product.html">Product</a></li>
+                        <li><a href="Portfolio.html">Portfolio</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+
             </ul>
         </nav>
         <main>
             <h2>This is the Product page</h2>
             <section class="product-container">
                 <div class="image">
-                   <img src="Image/Logo.jpg" alt="Small Business">
+                  <img src="Small Business.png" alt="Small Business">
                 </div>
                 <div class="description">
                     <h3>Small Business</h3>
-                    <p>It’s become critical because the internet has become a necessity
-                        in our lives rather than the novelty it once was decades ago.
-                        That’s why businesses must have a website that’s user-friendly
-                        and should be able to quickly provide all the details a customer 
-                        needs.
+                    <p>In today’s digital age, having a well-designed website is crucial for small
+                         businesses. It serves as a digital storefront, offering potential customers
+                         a glimpse into your brand, products, and services. Here's a comprehensive
+                         guide to creating an effective website for your small business.
                         These details include hours of operation, contact details, location
                         details with a map, and other relevant details. It can even include
                         the ability to book services or place orders online.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sunt veniam voluptas voluptatibus?
-                         Tempora cum unde aliquam. Hic eveniet est dignissimos provident eaque? Rerum sed, quaerat
-                          perspiciatis libero esse sit.</p>
-                          <button class="button"><a href="Product.html">Know More</a></button>
+                    <p>Investing in a small business website is one of the smartest decisions you can make.
+                         It not only establishes your presence online but also serves as a foundation for
+                          building lasting customer relationships. With careful planning and consistent 
+                          maintenance, your website can become a valuable asset that drives growth for your business.
+                        Whether you’re launching a new venture or upgrading an existing site, keep your
+                         customers’ needs in mind, and aim for a seamless, engaging user experience.</p>
+                         <div class="click">
+                          <button class="button"><a href="Contact.html">Know More</a></button>
                           <button class="better"><a href="Contact.html">Get Started</a></button>
+                          </div>
                 </div>
-            </section>
-            
+            </section><br>
 
+
+            <section class="product-container">
+                <div class="image">
+                   <img src="eCommerce Websites.png" alt="E-commerce website">
+                </div>
+                <div class="description">
+                    <h3>E-commerce website</h3>
+                    <p>In the world of digital business, an e-commerce website is a powerful platform that
+                         allows companies to sell products or services online. As consumer preferences shift
+                          toward online shopping, having a robust e-commerce website is no longer optional—it’s essential.</p>
+                    <p>Building a successful e-commerce website involves more than just setting up a storefront—it’s 
+                        about creating a seamless shopping experience that builds trust and drives sales. From design 
+                        and functionality to marketing and security, every element of your site plays a crucial role 
+                        in its success.
+                        Invest the time and resources needed to craft a professional, user-friendly e-commerce platform, 
+                        and you’ll be well on your way to growing your business in the competitive online marketplace.</p>
+                        <div class="click">
+                          <button class="button"><a href="Contact.html">Know More</a></button>
+                          <button class="better"><a href="Contact.html">Get Started</a></button>
+                          </div>
+                </div>
+            </section><br>
+
+            <section class="product-container">
+                <div class="image">
+                   <img src="portfolio website.png" alt="portfolio">
+                </div>
+                <div class="description">
+                    <h3>portfolio website</h3>
+                    <p>In an increasingly digital world, a portfolio website is a must-have for showcasing 
+                        your skills, work, and achievements. Whether you're a designer, developer, photographer, 
+                        writer, or any creative professional, a well-designed portfolio site serves as a powerful 
+                        tool to attract clients, employers, or collaborators.</p>
+                    <p>A portfolio website is a personal or professional platform where individuals display 
+                        their work, skills, and achievements. Unlike a resume or social media profile, it provides 
+                        a more dynamic and visually engaging way to present your expertise.</p>
+                       <p>A portfolio website is more than a showcase; it’s a reflection of your personal brand 
+                        and a gateway to career opportunities. By carefully designing and curating your site, 
+                        you can stand out in a competitive landscape and leave a lasting impression on visitors.</p>
+                        <div class="click">
+                          <button class="button"><a href="Contact.html">Know More</a></button>
+                          <button class="better"><a href="Contact.html">Get Started</a></button>
+                          </div>
+                </div>
+            </section><br>
+
+            <section class="product-container">
+                <div class="image">
+                   <img src="Personal Websites.png" alt="Personal Web">
+                </div>
+                <div class="description">
+                    <h3>Personal Website</h3>
+                    <p>A personal website is a unique digital space where you can showcase who you are, 
+                        what you do, and what you care about. Unlike social media platforms or professional 
+                        networking sites, a personal website gives you full control over your content, branding, 
+                        and message. Whether you’re building a professional profile, a creative portfolio, or a 
+                        blog to share your thoughts, a personal website is a versatile tool that can help you stand 
+                        out online.</p>
+                    <p>A personal website is more than just a digital resume or portfolio—it’s a reflection of who 
+                        you are and a tool for showcasing your talents, passions, and achievements. In a competitive 
+                        digital landscape, having your own website sets you apart and gives you a professional edge.</p>
+                        <div class="click">
+                          <button class="button"><a href="Contact.html">Know More</a></button>
+                          <button class="better"><a href="Contact.html">Get Started</a></button>
+                          </div>
+                </div>
+            </section><br>
+
+
+              
         </main>
     </body>
 
@@ -55,14 +146,15 @@
         <nav class="footer">
             <ul>
                 
-                <li><a href="Blog.html">Blog</a></li>               
+              
                 <nav class="footer-logo">
                     VERTEX TECH
                     </nav>
-                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="Portfolio.html">Portfolio</a></li>
                 <li><a href="Product.html">Product</a></li>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="Blog.html">Blog</a></li> 
+                <li><a href="Contact.html">Contact</a></li>
                 
             </ul>
         </nav>
