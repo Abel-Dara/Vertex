@@ -1,40 +1,170 @@
 <!doctype html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Summer code</title>
+        <title>Vertex Tech</title>
         <link rel="stylesheet" href="style.css">
+        <script src="/JAVASCRIPT/script.js"></script>
     </head>
+
     <body>
 
         <nav class="navbar">
             <ul>
                  
                 <nav class="logo">
-                    VERTEX
+                    VERTEX TECH
                     </nav>
-                
-                <li><a href="Attendance.html">Attendance</a></li>
+                <div class="PC"> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
                 <li><a href="Blog.html">Blog</a></li>
                 <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="Product.html">Product</a></li>
-                <li><a href="index.html">Home</a></li>
+                </div>
+                <nav class="content">
+                    <button id="toggleBtn" onclick="toggleSidebar()">☰</button>
+                </nav>
+                
+                <div id="sidebar" class="sidebar">
+                    <h2>Menu</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Product.html">Product</a></li>
+                        <li><a href="Portfolio.html">Portfolio</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+
             </ul>
         </nav>
         <main>
-            <h2>This is the Blog page</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error debitis nihil aut corrupti
-                 earum deleniti architecto maiores ullam repellendus nobis soluta incidunt qui repudiandae,
-                  alias suscipit repellat perspiciatis quibusdam sapiente.</p>
+            <div class="container">
+                <h2>Web Development: Building the Future</h2>
+                <p>Web development is an ever-evolving field that powers the modern internet. From small personal blogs to large-scale e-commerce platforms, web developers play a crucial role in shaping our digital experience. Here are four key aspects of web development:</p>
+        
+                <!-- Image Gallery -->
+                <div class="image-gallery">
+                    <img src="/Image/design.png" alt="Web Design">
+                    <img src="/Image/coding.png" alt="Coding">
+                    <img src="/Image/Deployment.png" alt="Deployment">
+                    <img src="/Image/Testing.png" alt="Testing">
+                </div>
+        
+                <!-- Partner Carousel -->
+                <h3 class="text-center">Our Partners</h3>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="card">
+                            <img src="/Image/partner1.png" alt="Partner 1">
+                            <h5>Partner 1</h5>
+                            <p>Leading provider of cloud solutions.</p>
+                        </div>
+                        <div class="card">
+                            <img src="/Image/partner2.png" alt="Partner 2">
+                            <h5>Partner 2</h5>
+                            <p>Innovators in AI technology.</p>
+                        </div>
+                        <div class="card">
+                            <img src="/Image/partner3.png" alt="Partner 3">
+                            <h5>Partner 3</h5>
+                            <p>Experts in cybersecurity solutions.</p>
+                        </div>
+                        <div class="card">
+                            <img src="/Image/partner4.png" alt="Partner 4">
+                            <h5>Partner 4</h5>
+                            <p>Pioneers in blockchain technology.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-buttons">
+                        <button onclick="prevSlide()">&#9664; Prev</button>
+                        <button onclick="nextSlide()">Next &#9654;</button>
+                    </div>
+                </div>
+            </div>
 
-                  <button onclick="document.getElementById('image').src='/Image/pic on.png'">Turn on</button>
+
+            <script>
+
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                const slides = document.querySelectorAll('.carousel .card');
+                const totalSlides = slides.length;
+    
+                if (index >= totalSlides) {
+                    currentSlide = 0;
+                } else if (index < 0) {
+                    currentSlide = totalSlides - 1;
+                } else {
+                    currentSlide = index;
+                }
+    
+                const carousel = document.querySelector('.carousel');
+                const offset = -currentSlide * 100;
+                carousel.style.transform = `translateX(${offset}%)`;
+            }
+    
+            function nextSlide() {
+                showSlide(currentSlide + 1);
+            }
+    
+            function prevSlide() {
+                showSlide(currentSlide - 1);
+            }
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+            <hr>
+                  <button class="better" onclick="document.getElementById('image').src='/Image/pic on.png'">Turn on</button>
 
 <img id="image" src="/Image/pic off.png" style="width:100px">
 
-<button onclick="document.getElementById('image').src='/Image/pic off.png'">Turn off</button>
+<button class="button" onclick="document.getElementById('image').src='/Image/pic off.png'">Turn off</button>
+
+
+
+
+
+<div class="glass-effect">
+    <h1>Frosted Glass Effect</h1>
+    <p>This background has a glass-like appearance.</p>
+  </div>
 
         </main>
     </body>
+    <div class="footer">
+
+        <nav class="footer">
+            <ul>
+                
+              
+                <nav class="footer-logo">
+                    VERTEX TECH
+                    </nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="Blog.html">Blog</a></li> 
+                <li><a href="Contact.html">Contact</a></li>
+                
+
+                
+            </ul>
+        </nav>
+        <p id="countdown"></p>
+        <p>&#169 2024 by Abel Darasimi / DAIH.</p>
+    </div>
 </html>
